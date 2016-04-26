@@ -151,170 +151,6 @@ vendor-prefixes = ms moz official webkit
 .mobile-col-offset-11
   margin-left 91.667%
 
-// tablet
-
-.tablet-col-0,
-.tablet-col-1,
-.tablet-col-2,
-.tablet-col-3,
-.tablet-col-4,
-.tablet-col-5,
-.tablet-col-6,
-.tablet-col-7,
-.tablet-col-8,
-.tablet-col-9,
-.tablet-col-10,
-.tablet-col-11,
-.tablet-col-12
-  box-sizing border-box
-  flex 0 0 auto
-  padding-right 1%
-  padding-left 1%
-.tablet-col-0
-  flex-grow 1
-  flex-basis 0
-  max-width 100%
-.tablet-col-1
-  flex-basis 8.333%
-  max-width 8.333%
-.tablet-col-2
-  flex-basis 16.667%
-  max-width 16.667%
-.tablet-col-3
-  flex-basis 25%
-  max-width 25%
-.tablet-col-4
-  flex-basis 33.333%
-  max-width 33.333%
-.tablet-col-5
-  flex-basis 41.667%
-  max-width 41.667%
-.tablet-col-6
-  flex-basis 50%
-  max-width 50%
-.tablet-col-7
-  flex-basis 58.333%
-  max-width 58.333%
-.tablet-col-8
-  flex-basis 66.667%
-  max-width 66.667%
-.tablet-col-9
-  flex-basis 75%
-  max-width 75%
-.tablet-col-10
-  flex-basis 83.333%
-  max-width 83.333%
-.tablet-col-11
-  flex-basis 91.667%
-  max-width 91.667%
-.tablet-col-12
-  flex-basis 100%
-  max-width 100%
-.tablet-col-offset-1
-  margin-left 8.333%
-.tablet-col-offset-2
-  margin-left 16.667%
-.tablet-col-offset-3
-  margin-left 25%
-.tablet-col-offset-4
-  margin-left 33.333%
-.tablet-col-offset-5
-  margin-left 41.667%
-.tablet-col-offset-6
-  margin-left 50%
-.tablet-col-offset-7
-  margin-left 58.333%
-.tablet-col-offset-8
-  margin-left 66.667%
-.tablet-col-offset-9
-  margin-left 75%
-.tablet-col-offset-10
-  margin-left 83.333%
-.tablet-col-offset-11
-    margin-left 91.667%
-
-// desktop
-
-.desktop-col-0,
-.desktop-col-1,
-.desktop-col-2,
-.desktop-col-3,
-.desktop-col-4,
-.desktop-col-5,
-.desktop-col-6,
-.desktop-col-7,
-.desktop-col-8,
-.desktop-col-9,
-.desktop-col-10,
-.desktop-col-11,
-.desktop-col-12
-  box-sizing border-box
-  flex 0 0 auto
-  padding-right 1%
-  padding-left 1%
-.desktop-col-0
-  flex-grow 1
-  flex-basis 0
-  max-width 100%
-.desktop-col-1
-  flex-basis 8.333%
-  max-width 8.333%
-.desktop-col-2
-  flex-basis 16.667%
-  max-width 16.667%
-.desktop-col-3
-  flex-basis 25%
-  max-width 25%
-.desktop-col-4
-  flex-basis 33.333%
-  max-width 33.333%
-.desktop-col-5
-  flex-basis 41.667%
-  max-width 41.667%
-.desktop-col-6
-  flex-basis 50%
-  max-width 50%
-.desktop-col-7
-  flex-basis 58.333%
-  max-width 58.333%
-.desktop-col-8
-  flex-basis 66.667%
-  max-width 66.667%
-.desktop-col-9
-  flex-basis 75%
-  max-width 75%
-.desktop-col-10
-  flex-basis 83.333%
-  max-width 83.333%
-.desktop-col-11
-  flex-basis 91.667%
-  max-width 91.667%
-.desktop-col-12
-  flex-basis 100%
-  max-width 100%
-.desktop-col-offset-1
-  margin-left 8.333%
-.desktop-col-offset-2
-  margin-left 16.667%
-.desktop-col-offset-3
-  margin-left 25%
-.desktop-col-offset-4
-  margin-left 33.333%
-.desktop-col-offset-5
-  margin-left 41.667%
-.desktop-col-offset-6
-  margin-left 50%
-.desktop-col-offset-7
-  margin-left 58.333%
-.desktop-col-offset-8
-  margin-left 66.667%
-.desktop-col-offset-9
-  margin-left 75%
-.desktop-col-offset-10
-  margin-left 83.333%
-.desktop-col-offset-11
-    margin-left 91.667%
-
 .start
   justify-content flex-start
   text-align start
@@ -339,4 +175,170 @@ vendor-prefixes = ms moz official webkit
 .last
   order 1
 
-// Components
+// Media queries
+
+// tablet
+
+@media (min-width: 480px)
+  .tablet-col-0,
+  .tablet-col-1,
+  .tablet-col-2,
+  .tablet-col-3,
+  .tablet-col-4,
+  .tablet-col-5,
+  .tablet-col-6,
+  .tablet-col-7,
+  .tablet-col-8,
+  .tablet-col-9,
+  .tablet-col-10,
+  .tablet-col-11,
+  .tablet-col-12
+    box-sizing border-box
+    flex 0 0 auto
+    padding-right 1%
+    padding-left 1%
+  .tablet-col-0
+    flex-grow 1
+    flex-basis 0
+    max-width 100%
+  .tablet-col-1
+    flex-basis 8.333%
+    max-width 8.333%
+  .tablet-col-2
+    flex-basis 16.667%
+    max-width 16.667%
+  .tablet-col-3
+    flex-basis 25%
+    max-width 25%
+  .tablet-col-4
+    flex-basis 33.333%
+    max-width 33.333%
+  .tablet-col-5
+    flex-basis 41.667%
+    max-width 41.667%
+  .tablet-col-6
+    flex-basis 50%
+    max-width 50%
+  .tablet-col-7
+    flex-basis 58.333%
+    max-width 58.333%
+  .tablet-col-8
+    flex-basis 66.667%
+    max-width 66.667%
+  .tablet-col-9
+    flex-basis 75%
+    max-width 75%
+  .tablet-col-10
+    flex-basis 83.333%
+    max-width 83.333%
+  .tablet-col-11
+    flex-basis 91.667%
+    max-width 91.667%
+  .tablet-col-12
+    flex-basis 100%
+    max-width 100%
+  .tablet-col-offset-1
+    margin-left 8.333%
+  .tablet-col-offset-2
+    margin-left 16.667%
+  .tablet-col-offset-3
+    margin-left 25%
+  .tablet-col-offset-4
+    margin-left 33.333%
+  .tablet-col-offset-5
+    margin-left 41.667%
+  .tablet-col-offset-6
+    margin-left 50%
+  .tablet-col-offset-7
+    margin-left 58.333%
+  .tablet-col-offset-8
+    margin-left 66.667%
+  .tablet-col-offset-9
+    margin-left 75%
+  .tablet-col-offset-10
+    margin-left 83.333%
+  .tablet-col-offset-11
+      margin-left 91.667%
+
+// desktop
+
+@media (min-width: 960px)
+  .desktop-col-0,
+  .desktop-col-1,
+  .desktop-col-2,
+  .desktop-col-3,
+  .desktop-col-4,
+  .desktop-col-5,
+  .desktop-col-6,
+  .desktop-col-7,
+  .desktop-col-8,
+  .desktop-col-9,
+  .desktop-col-10,
+  .desktop-col-11,
+  .desktop-col-12
+    box-sizing border-box
+    flex 0 0 auto
+    padding-right 1%
+    padding-left 1%
+  .desktop-col-0
+    flex-grow 1
+    flex-basis 0
+    max-width 100%
+  .desktop-col-1
+    flex-basis 8.333%
+    max-width 8.333%
+  .desktop-col-2
+    flex-basis 16.667%
+    max-width 16.667%
+  .desktop-col-3
+    flex-basis 25%
+    max-width 25%
+  .desktop-col-4
+    flex-basis 33.333%
+    max-width 33.333%
+  .desktop-col-5
+    flex-basis 41.667%
+    max-width 41.667%
+  .desktop-col-6
+    flex-basis 50%
+    max-width 50%
+  .desktop-col-7
+    flex-basis 58.333%
+    max-width 58.333%
+  .desktop-col-8
+    flex-basis 66.667%
+    max-width 66.667%
+  .desktop-col-9
+    flex-basis 75%
+    max-width 75%
+  .desktop-col-10
+    flex-basis 83.333%
+    max-width 83.333%
+  .desktop-col-11
+    flex-basis 91.667%
+    max-width 91.667%
+  .desktop-col-12
+    flex-basis 100%
+    max-width 100%
+  .desktop-col-offset-1
+    margin-left 8.333%
+  .desktop-col-offset-2
+    margin-left 16.667%
+  .desktop-col-offset-3
+    margin-left 25%
+  .desktop-col-offset-4
+    margin-left 33.333%
+  .desktop-col-offset-5
+    margin-left 41.667%
+  .desktop-col-offset-6
+    margin-left 50%
+  .desktop-col-offset-7
+    margin-left 58.333%
+  .desktop-col-offset-8
+    margin-left 66.667%
+  .desktop-col-offset-9
+    margin-left 75%
+  .desktop-col-offset-10
+    margin-left 83.333%
+  .desktop-col-offset-11
+      margin-left 91.667%
