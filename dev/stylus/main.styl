@@ -20,6 +20,7 @@ $lightengray = lighten($gray, 85%)
   box-sizing border-box
 
 html
+  color $black
   font-family "Roboto"
   font-size 16px
 
@@ -30,6 +31,7 @@ html
 .blue
   color $blue
 .text-center
+  display block
   text-align center
 
 // header
@@ -76,7 +78,7 @@ html
     top 1rem
   &-logo-mobile
     display block
-    margin 1rem auto
+    margin 1rem auto 3rem auto
     max-height 200px
     max-width 200px
   &-logo-desktop
@@ -85,7 +87,6 @@ html
     height 0
     opacity 0
     padding 0 2rem 1rem 2rem
-    transform translate(100vw, 0)
     transition .25s ease-in-out
     ul
       padding 0
@@ -97,12 +98,14 @@ html
         text-align center
         &:last-child
           border-bottom 0
+        a
+          color inherit
+          text-decoration none
     &.nav-open
       background $yellow
       display block
       height auto
       opacity 1
-      transform translate(0, 0)
 
 // Form
 
@@ -202,6 +205,16 @@ h5
 h6
   font-weight 400
   font-size 1.5rem
+
+hr
+  border none
+  background $lightengray
+  height 1px
+  margin-bottom 1rem
+  width 100%
+
+p
+  line-height 1.5rem
 
 // Font
 
@@ -460,9 +473,15 @@ h6
 
 @media (min-width: 1024px)
 
+  // wrapper
+  .wrapper
+    max-width 960px
+    margin 0 auto
+
   //header
 
   .Header
+    border-bottom 1px solid $lightengray
     &-hamburger
       display none
     &-logo-mobile
@@ -473,7 +492,7 @@ h6
     &-maininfo
       height 100px
       order -1
-      padding 1.25rem 2rem
+      padding 1.25rem 0
     &-nav
       display block
       transform translate(0, 0)
