@@ -147,6 +147,36 @@ textarea
   resize vertical
   width 100%
 
+// Accordion
+
+.accordion
+  article
+    background #f0f0f0
+    height 0
+    margin-bottom .5rem
+    overflow hidden
+    p
+      padding 1rem
+  input[type="checkbox"]
+    display none
+    &:checked ~ article
+      border-radius 0 0 .25rem .25rem
+      height auto
+    &:checked + label
+      margin-bottom 0
+  label
+    background #f0f0f0
+    border-radius .25rem .25rem 0 0
+    cursor pointer
+    font-weight 700
+    display block
+    padding 1rem
+    position relative
+    z-index 20
+    &:before
+      content "▼"
+      margin-right 1rem
+
 // Text
 
 a
