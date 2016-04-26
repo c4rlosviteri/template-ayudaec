@@ -23,43 +23,86 @@ html
   font-family "Roboto"
   font-size 16px
 
+// modifiers
+
+.yellow
+  background $yellow
+.blue
+  color $blue
+.text-center
+  text-align center
+
 // header
 
 .Header
-  background $yellow
-  padding 2rem
-  position relative
   &-hamburger
-    position absolute
-    right 2rem
-    top 1.25rem
+    padding 2rem 0
+    position relative
+    transform rotate(0deg)
+    transition .5s ease-in-out
     .Header-lines
-      background white
+      background $yellow
       border-radius .25rem
-      height .25rem
-      margin-bottom .25rem
-      width 1.75rem
-      &:last-child
-        margin-bottom 0
-  &-exit
-    position absolute
-    right 2rem
-    top 1.25rem
-    .Header-lines
-      background black
-      border-radius .25rem
-      height .25rem
-      margin-bottom .25rem
-      width 1.75rem
-      &:first-child
-        margin-top .5rem
-        transform rotate(45deg)
+      display block
+      height .375rem
+      left 0
+      opacity 1
+      position relative
+      transform rotate(0deg)
+      transition .25s ease-in-out
+      width 2.5rem
+      &:nth-child(1)
+        top 0
       &:nth-child(2)
-        margin-bottom .5rem
-        margin-top -.5rem
-        transform rotate(-45deg)
-      &:last-child
-        display none
+        top .375rem
+      &:nth-child(3)
+        top .75rem
+    &.open-hamburger
+      background $yellow
+      .Header-lines
+        background black
+        &:nth-child(1)
+          top 1rem
+          transform rotate(135deg)
+        &:nth-child(2)
+          opacity 0
+          left -60px
+        &:nth-child(3)
+          top .25rem
+          transform rotate(-135deg)
+  &-lineswrapper
+    position absolute
+    right 2rem
+    top 1rem
+  &-logo-mobile
+    display block
+    margin 1rem auto
+    max-height 200px
+    max-width 200px
+  &-logo-desktop
+    display none
+  &-nav
+    height 0
+    opacity 0
+    padding 0 2rem 1rem 2rem
+    transform translate(100vw, 0)
+    transition .25s ease-in-out
+    ul
+      padding 0
+      margin 0
+      li
+        border-bottom 1px solid white
+        list-style none
+        padding 1rem 0
+        text-align center
+        &:last-child
+          border-bottom 0
+    &.nav-open
+      background $yellow
+      display block
+      height auto
+      opacity 1
+      transform translate(0, 0)
 
 // Form
 
@@ -81,7 +124,7 @@ button(c, t, p)
 .button
   button($blue, white, 25%)
   &--yellow
-    button($yellow, $blue, 15%)
+    button($yellow, black, 15%)
 
 input[type="submit"]
   border-left none
@@ -415,7 +458,41 @@ h6
 
 // desktop
 
-@media (min-width: 960px)
+@media (min-width: 1024px)
+
+  //header
+
+  .Header
+    &-hamburger
+      display none
+    &-logo-mobile
+      display none
+    &-logo-desktop
+      display block
+      height 60px
+    &-maininfo
+      height 100px
+      order -1
+      padding 1.25rem 2rem
+    &-nav
+      display block
+      transform translate(0, 0)
+      opacity 1
+      height 100px
+    &-wrapper
+      display flex
+      margin 0 auto
+      max-width 960px
+      justify-content space-between
+      ul
+        li
+          border-bottom 0
+          display inline-block
+          line-height 65px
+          margin-right 3rem
+          &:last-child
+            margin-right 0
+
   .desktop-col-0,
   .desktop-col-1,
   .desktop-col-2,
