@@ -164,6 +164,8 @@ textarea
       height auto
     &:checked + label
       margin-bottom 0
+      &:after
+        content "▲"
   label
     background #f0f0f0
     border-radius .25rem .25rem 0 0
@@ -173,9 +175,10 @@ textarea
     padding 1rem
     position relative
     z-index 20
-    &:before
+    &:after
       content "▼"
-      margin-right 1rem
+      position absolute
+      right 1rem
 
 // Text
 
