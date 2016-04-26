@@ -7,6 +7,13 @@
   <link rel="stylesheet" href="/build/css/main.css">
 </head>
 <body>
+    <header class="Header">
+      <div class="Header-hamburger" id="menu-class">
+        <div class="Header-lines"></div>
+        <div class="Header-lines"></div>
+        <div class="Header-lines"></div>
+      </div>
+    </header>
     <h1>Roboto</h1>
     <h2>Roboto</h2>
     <h3>Roboto Slab</h3>
@@ -42,6 +49,16 @@
     <span class="icon-news"></span>
     <span class="icon-pointer"></span>
     <span class="icon-marmalade"></span>
+
+    <script>
+    (function() {
+      function toggleClassMenu() {
+        this.classList.toggle('Header-hamburger');
+        this.classList.toggle('Header-exit');
+      }
+      document.getElementById('menu-class').addEventListener('click', toggleClassMenu);
+    })()
+    </script>
 
 </body>
 </html>

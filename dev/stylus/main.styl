@@ -23,6 +23,60 @@ html
   font-family "Roboto"
   font-size 16px
 
+// header
+
+.Header
+  background $yellow
+  padding 2rem
+  position relative
+  &-hamburger
+    position absolute
+    right 2rem
+    top 1.25rem
+    .Header-lines
+      background white
+      border-radius .25rem
+      height .25rem
+      margin-bottom .25rem
+      width 1.75rem
+      &:last-child
+        margin-bottom 0
+  &-exit
+    position absolute
+    right 2rem
+    top 1.25rem
+    .Header-lines
+      background black
+      border-radius .25rem
+      height .25rem
+      margin-bottom .25rem
+      width 1.75rem
+      &:first-child
+        margin-top .5rem
+        transform rotate(45deg)
+      &:nth-child(2)
+        margin-bottom .5rem
+        margin-top -.5rem
+        transform rotate(-45deg)
+      &:last-child
+        display none
+  &-nav
+    background $yellow
+    ul
+      margin 0
+      padding 1.75rem 2rem
+      li
+        border-bottom 1px solid white
+        list-style none
+        padding 1rem
+        text-align center
+      .hide
+        display none
+      .show
+        display block
+        &:last-child
+          border none
+
 // Form
 
 button(c, t, p)
