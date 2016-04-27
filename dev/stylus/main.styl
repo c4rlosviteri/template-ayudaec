@@ -13,6 +13,7 @@ $blue = #27527e
 $black = #1c1c1c
 $gray = #515254
 $lightengray = lighten($gray, 85%)
+$midgray = $lighten($gray, 30%)
 
 // General
 
@@ -186,7 +187,8 @@ input[type="submit"]
   border-top none
 
 input[type="text"], input[type="email"], input[type="password"], textarea
-  border 1px solid $gray
+  font-size 14px
+  border 1px solid $midgray
   margin .5rem 0
   padding .8rem 1rem
 
